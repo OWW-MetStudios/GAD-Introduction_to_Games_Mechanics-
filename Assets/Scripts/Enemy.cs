@@ -27,5 +27,9 @@ public class Enemy : MonoBehaviour
         {
             Destroy(gameObject);
         }
+        if (collision.gameObject.tag == "Player")
+        {
+            Destroy(collision.gameObject);
+        }
     }
 }
